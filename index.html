@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .body {
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 30px;
+      
+      
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      width: 200px; 
+      overflow:hidden;
+      border-radius: 20px;
+    }
+
+    @media (min-width: 900px) {
+      .container {
+        flex-direction: row;
+        width: 600px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 30px;
+      }
+    }
+
+    .carcard-first {
+      background-color: hsl(31, 77%, 52%);
+      padding: 20px;
+      flex: 33.33%;
+ 
+      
+    }
+
+    .carcard-second {
+      background-color: hsl(184, 100%, 22%);
+      padding: 20px;
+      flex: 33.33%;
+    }
+
+    .carcard-third {
+      background-color: hsl(179, 100%, 13%);
+      padding: 20px;
+      flex: 33.33%;
+    }
+
+    .carname {
+      font-family: 'Big Shoulders Display', cursive;
+      font-size: 25px;
+      color: hsl(0, 0%, 95%);
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .cardescr {
+      font-family: 'Lexend Deca', sans-serif;
+      font-size: 10px;
+      color: hsla(0, 0%, 100%, 0.75);
+      margin-bottom: 20px;
+
+    }
+
+    .hoverbutton{
+      border-radius: 30px;
+      border: 0px;
+      padding: 10px;
+      font-family: 'Lexend Deca', sans-serif;
+      font-size: 10px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .hoverbutton:hover {
+      cursor: pointer;
+    }
+  
+
+
+  </style>
+</head>
+<body class="body">
+  <div class="container">
+    <div class="carcard-first"> 
+      <div class="carimg"> <img src="images/icon-sedans.svg" width="50" height="30"></div>
+      <div class="carname">SEDANS</div>
+      <div class="cardescr">Choose a sedan for its </br> affordability and excellent fuel </br>economy. Ideal for cruising in </br>the city 
+        or on your next road </br>trip.</div>
+      <button class="hoverbutton" style="color:hsl(31, 77%, 52%);">Learn More</button>
+    </div>
+    <div class="carcard-second"> 
+      <div class="carimg"><img src="images/icon-suvs.svg" width="50" height="30"></div>
+      <div class="carname"> SUVS</div>
+      <div class="cardescr">Take an SUV for its spacious </br> interior, power, and versatility.</br> Perfect for your next family</br> vacation 
+        and off-road</br> adventures.</div>
+      <button class="hoverbutton" style="color:hsl(184, 100%, 22%);">Learn More</button>
+    </div>
+    <div class="carcard-third"> 
+      <div class="carimg"><img src="images/icon-luxury.svg" width="50" height="30"></div>
+      <div class="carname">LUXURY</div>
+      <div class="cardescr">Cruise in the best car brands </br> without the bloated prices.</br> Enjoy the enhanced comfort of</br> a luxury 
+        rental and arrive in </br>style.</div>
+      <button class="hoverbutton" style="color:hsl(179, 100%, 13%);">Learn More</button>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">jiramos87gmail.com</a>.
+  </div>
+</body>
+</html>
